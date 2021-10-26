@@ -3,6 +3,7 @@
     <button class="btn btn-success">New Recipe</button>
   </div>
 </div>
+<hr />
 <div class="row">
   <div class="col-xs-12">
     <a href="#" class="clearfix list-group-item" *ngFor="let recipe of recipes">
@@ -16,14 +17,13 @@
         </p>
       </div>
       <span class="pull-right">
+        <!-- property biding in img src !!! or string  interpolation   src="{{ recipe.imagePath }}" -->
         <img
-          src="{{ recipe.imagePath }}"
-          alt=""
+          [src]="recipe.imagePath"
+          alt="{{ recipe.name }}"
           class="img-responsive"
           style="max-height: 50px"
         />
-        <button class="btn btn-default">Edit</button>
-        <button class="btn btn-default">Delete</button>
       </span>
     </a>
 
