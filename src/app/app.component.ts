@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'courseProject-recipe-app';
+  public loadedFeature = 'recipe';
+
+  constructor() {
+  }
+
+  ngOnInit() { }
+
+  public onNavigate(feature: string): string {
+    return this.loadedFeature = feature;
+  }
+
 }
