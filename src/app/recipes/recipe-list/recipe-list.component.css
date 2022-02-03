@@ -1,0 +1,10 @@
+
+.online {
+  color: white;
+  background: lightseagreen;
+}
+
+.offline {
+  color: white;
+  background: firebrick;
+}
